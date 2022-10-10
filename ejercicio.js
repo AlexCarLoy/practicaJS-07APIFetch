@@ -34,7 +34,7 @@ const printUser = ({ avatar, id, email, first_name, last_name }) => {
                     <p class="text-center">${id}</p>
                 </div>
                 <div class="col-md-4 justify-content-center">
-                    <p class="text-center"><a href="#">${email}</a></p>
+                    <p class="text-center">${email}</p>
                 </div>
                 <div class="col-md-3 justify-content-center">
                     <p class="text-center">${first_name}</p>
