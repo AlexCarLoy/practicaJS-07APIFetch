@@ -33,6 +33,9 @@ const printUser = ({ avatar, id, email, first_name, last_name }) => {
                 <div class="col-md-1 justify-content-center">
                     <p class="text-center">${id}</p>
                 </div>
+                <div class="col-md-1 justify-content-center text-center">
+                    <img src="${avatar}" class="rounded-circle mx-auto" style="width: 50px"></img>
+                </div>
                 <div class="col-md-4 justify-content-center">
                     <p class="text-center">${email}</p>
                 </div>
@@ -42,14 +45,14 @@ const printUser = ({ avatar, id, email, first_name, last_name }) => {
                 <div class="col-md-3 justify-content-center">
                     <p class="text-center"> ${last_name}</p>
                 </div>
-                <div class="col-md-1 justify-content-center text-center">
-                    <img src="${avatar}" class="rounded-circle mx-auto" style="width: 50px"></img>
-                </div>
             <div/>`
 }
 const userHeader = `<div class="row border-bottom border-3 border-dark" >
                         <div class="col-md-1 justify-content-center">
                             <p class="text-center">Id</p>
+                        </div>
+                        <div class="col-md-1 justify-content-center">
+                            <p class="text-center">Image</p>
                         </div>
                         <div class="col-md-4 justify-content-center">
                             <p class="text-center">Email</p>
@@ -59,9 +62,6 @@ const userHeader = `<div class="row border-bottom border-3 border-dark" >
                         </div>
                         <div class="col-md-3 justify-content-center">
                             <p class="text-center">Last name</p>
-                        </div>
-                        <div class="col-md-1 justify-content-center">
-                            <p class="text-center">Image</p>
                         </div>
                     </div>`
 const printUsers = (users) => {
